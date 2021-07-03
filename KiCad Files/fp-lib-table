@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name custom-parts)(type KiCad)(uri ${KIPRJMOD}/custom-parts.pretty)(options "")(descr ""))
+  (lib (name kicad-keyboard-parts)(type KiCad)(uri ${KIPRJMOD}/kicad-keyboard-parts.pretty)(options "")(descr ""))
+)

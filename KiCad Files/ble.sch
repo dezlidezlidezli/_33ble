@@ -1,0 +1,1632 @@
+EESchema Schematic File Version 4
+LIBS:ble-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L kicad-keyboard-parts:nRF52840_holyiot_18010 U3
+U 1 1 5FFE45B3
+P 1600 4850
+F 0 "U3" H 1600 6365 50  0000 C CNN
+F 1 "nRF52840_holyiot_18010" H 1600 6274 50  0000 C CNN
+F 2 "kicad-keyboard-parts:nRF52840_holyiot_18010" H 1700 5250 50  0001 C CNN
+F 3 "http://www.holyiot.com/tp/2019042516322180424.pdf" H 1700 5250 50  0001 C CNN
+	1    1600 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 6300 3    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR021
+U 1 1 5FFFB40A
+P 900 4600
+F 0 "#PWR021" H 900 4350 50  0001 C CNN
+F 1 "GND" V 905 4472 50  0000 R CNN
+F 2 "" H 900 4600 50  0001 C CNN
+F 3 "" H 900 4600 50  0001 C CNN
+	1    900  4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5FFFB982
+P 2300 5800
+F 0 "#PWR025" H 2300 5550 50  0001 C CNN
+F 1 "GND" V 2305 5672 50  0000 R CNN
+F 2 "" H 2300 5800 50  0001 C CNN
+F 3 "" H 2300 5800 50  0001 C CNN
+	1    2300 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 USB1
+U 1 1 600131F4
+P 1450 1600
+F 0 "USB1" H 1283 2397 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 1283 2291 60  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 1450 1600 60  0001 C CNN
+F 3 "" H 1450 1600 60  0001 C CNN
+	1    1450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6001502B
+P 1550 1050
+F 0 "#PWR02" H 1550 800 50  0001 C CNN
+F 1 "GND" V 1555 922 50  0000 R CNN
+F 2 "" H 1550 1050 50  0001 C CNN
+F 3 "" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 60015345
+P 1550 2150
+F 0 "#PWR014" H 1550 1900 50  0001 C CNN
+F 1 "GND" V 1555 2022 50  0000 R CNN
+F 2 "" H 1550 2150 50  0001 C CNN
+F 3 "" H 1550 2150 50  0001 C CNN
+	1    1550 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR016
+U 1 1 60015900
+P 1550 2250
+F 0 "#PWR016" H 1550 2000 50  0001 C CNN
+F 1 "Earth" H 1550 2100 50  0001 C CNN
+F 2 "" H 1550 2250 50  0001 C CNN
+F 3 "~" H 1550 2250 50  0001 C CNN
+	1    1550 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR017
+U 1 1 60015DDF
+P 1000 2500
+F 0 "#PWR017" H 1000 2250 50  0001 C CNN
+F 1 "Earth" H 1000 2350 50  0001 C CNN
+F 2 "" H 1000 2500 50  0001 C CNN
+F 3 "~" H 1000 2500 50  0001 C CNN
+	1    1000 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6001726D
+P 1050 2950
+F 0 "H1" H 950 2907 50  0000 R CNN
+F 1 "MountingHole_Pad" H 950 2998 50  0000 R CNN
+F 2 "" H 1050 2950 50  0001 C CNN
+F 3 "~" H 1050 2950 50  0001 C CNN
+	1    1050 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 2500 1050 2500
+Wire Wire Line
+	1050 2500 1050 2850
+$Comp
+L Device:R_Small R6
+U 1 1 6001957C
+P 1200 2500
+F 0 "R6" V 1004 2500 50  0000 C CNN
+F 1 "1M" V 1095 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1200 2500 50  0001 C CNN
+F 3 "~" H 1200 2500 50  0001 C CNN
+	1    1200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 6001991A
+P 1200 2800
+F 0 "C4" V 971 2800 50  0000 C CNN
+F 1 "4.7n" V 1062 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1200 2800 50  0001 C CNN
+F 3 "~" H 1200 2800 50  0001 C CNN
+	1    1200 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 2500 1100 2500
+Wire Wire Line
+	1100 2500 1100 2800
+Connection ~ 1050 2500
+Connection ~ 1100 2500
+Wire Wire Line
+	1300 2800 1300 2500
+Wire Wire Line
+	1300 2500 1500 2500
+Connection ~ 1300 2500
+$Comp
+L power:GND #PWR018
+U 1 1 6001ADBF
+P 1500 2500
+F 0 "#PWR018" H 1500 2250 50  0001 C CNN
+F 1 "GND" V 1505 2372 50  0000 R CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1550 1250
+NoConn ~ 1550 1850
+$Comp
+L Device:R_Small R1
+U 1 1 6002A511
+P 1750 1350
+F 0 "R1" V 1554 1350 50  0000 C CNN
+F 1 "5.1k" V 1645 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1750 1350 50  0001 C CNN
+F 3 "~" H 1750 1350 50  0001 C CNN
+	1    1750 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6002B6C3
+P 1850 1350
+F 0 "#PWR04" H 1850 1100 50  0001 C CNN
+F 1 "GND" V 1855 1222 50  0000 R CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1350 1650 1350
+$Comp
+L Device:R_Small R5
+U 1 1 6002CF3F
+P 1750 1950
+F 0 "R5" V 1554 1950 50  0000 C CNN
+F 1 "5.1k" V 1645 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1750 1950 50  0001 C CNN
+F 3 "~" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 6002CF45
+P 1850 1950
+F 0 "#PWR011" H 1850 1700 50  0001 C CNN
+F 1 "GND" V 1855 1822 50  0000 R CNN
+F 2 "" H 1850 1950 50  0001 C CNN
+F 3 "" H 1850 1950 50  0001 C CNN
+	1    1850 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1950 1650 1950
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 600324FF
+P 4250 1000
+F 0 "F1" V 4045 1000 50  0000 C CNN
+F 1 "500ma" V 4136 1000 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4300 800 50  0001 L CNN
+F 3 "~" H 4250 1000 50  0001 C CNN
+	1    4250 1000
+	0    1    1    0   
+$EndComp
+Text GLabel 1550 2050 2    50   Input ~ 0
+RAW
+Text GLabel 1550 1150 2    50   Input ~ 0
+RAW
+Text GLabel 4000 1000 0    50   Input ~ 0
+RAW
+$Comp
+L power:VBUS #PWR01
+U 1 1 60039AFF
+P 5000 1000
+F 0 "#PWR01" H 5000 850 50  0001 C CNN
+F 1 "VBUS" V 5015 1128 50  0000 L CNN
+F 2 "" H 5000 1000 50  0001 C CNN
+F 3 "" H 5000 1000 50  0001 C CNN
+	1    5000 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 1000 4150 1000
+Text GLabel 2000 6300 3    50   Input ~ 0
+D-
+Text GLabel 2100 6300 3    50   Input ~ 0
+D+
+$Comp
+L Battery_Management:MCP73831-3-OT U2
+U 1 1 60078B09
+P 4250 1700
+F 0 "U2" H 4050 1850 50  0000 C CNN
+F 1 "TP4054" H 4100 1750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4300 1450 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 4100 1650 50  0001 C CNN
+	1    4250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR06
+U 1 1 6007AE3B
+P 4250 1400
+F 0 "#PWR06" H 4250 1250 50  0001 C CNN
+F 1 "VBUS" H 4265 1573 50  0000 C CNN
+F 2 "" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 6007C1B9
+P 4250 2150
+F 0 "#PWR015" H 4250 1900 50  0001 C CNN
+F 1 "GND" H 4255 1977 50  0000 C CNN
+F 2 "" H 4250 2150 50  0001 C CNN
+F 3 "" H 4250 2150 50  0001 C CNN
+	1    4250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6007CFD3
+P 3650 1800
+F 0 "R3" V 3450 1800 50  0000 C CNN
+F 1 "10k" V 3550 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3650 1800 50  0001 C CNN
+F 3 "~" H 3650 1800 50  0001 C CNN
+	1    3650 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 1800 3850 1800
+Wire Wire Line
+	3550 1800 3500 1800
+Wire Wire Line
+	3500 1800 3500 2100
+Wire Wire Line
+	3500 2100 4250 2100
+Wire Wire Line
+	4250 2000 4250 2100
+Connection ~ 4250 2100
+Wire Wire Line
+	4250 2100 4250 2150
+$Comp
+L Device:C_Small C1
+U 1 1 60088079
+P 4750 1450
+F 0 "C1" H 4658 1404 50  0000 R CNN
+F 1 "4.7uF" H 4658 1495 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4750 1450 50  0001 C CNN
+F 3 "~" H 4750 1450 50  0001 C CNN
+	1    4750 1450
+	-1   0    0    1   
+$EndComp
+Text GLabel 4850 1600 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	4650 1600 4750 1600
+Wire Wire Line
+	4750 1550 4750 1600
+Connection ~ 4750 1600
+Wire Wire Line
+	4750 1600 4850 1600
+$Comp
+L power:GND #PWR05
+U 1 1 6008AC1C
+P 4750 1350
+F 0 "#PWR05" H 4750 1100 50  0001 C CNN
+F 1 "GND" H 4755 1177 50  0000 C CNN
+F 2 "" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4750 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 1000 5000 1000
+Text GLabel 3950 2800 0    50   Input ~ 0
+VBAT
+$Comp
+L Device:R_Small R7
+U 1 1 6008F929
+P 4250 2800
+F 0 "R7" V 4054 2800 50  0000 C CNN
+F 1 "806k" V 4145 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 2800 50  0001 C CNN
+F 3 "~" H 4250 2800 50  0001 C CNN
+	1    4250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 60090850
+P 4750 2800
+F 0 "R8" V 4554 2800 50  0000 C CNN
+F 1 "2M" V 4645 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4750 2800 50  0001 C CNN
+F 3 "~" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 600911C7
+P 5200 2800
+F 0 "#PWR019" H 5200 2550 50  0001 C CNN
+F 1 "GND" V 5205 2672 50  0000 R CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2800 4150 2800
+Wire Wire Line
+	4850 2800 5200 2800
+Wire Wire Line
+	4350 2800 4500 2800
+Text GLabel 4500 3050 3    50   Input ~ 0
+BVOLT
+Wire Wire Line
+	4500 2800 4500 3050
+Connection ~ 4500 2800
+Wire Wire Line
+	4500 2800 4650 2800
+Text GLabel 900  5700 0    50   Input ~ 0
+BVOLT
+$Comp
+L Regulator_Linear:AP2112K-3.3 U1
+U 1 1 60096F9E
+P 7700 1650
+F 0 "U1" H 7700 1992 50  0000 C CNN
+F 1 "AP2112K-3.3" H 7700 1901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7700 1975 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 7700 1750 50  0001 C CNN
+	1    7700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6009EF20
+P 7700 1950
+F 0 "#PWR013" H 7700 1700 50  0001 C CNN
+F 1 "GND" H 7705 1777 50  0000 C CNN
+F 2 "" H 7700 1950 50  0001 C CNN
+F 3 "" H 7700 1950 50  0001 C CNN
+	1    7700 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 1550 2    50   Input ~ 0
+VDD_NRF
+$Comp
+L Transistor_FET:AO3401A Q1
+U 1 1 600A5446
+P 7000 1200
+F 0 "Q1" H 7205 1246 50  0000 L CNN
+F 1 "AO3401A" H 7205 1155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 1125 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 7000 1200 50  0001 L CNN
+	1    7000 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 1000 1    50   Input ~ 0
+VBAT
+$Comp
+L power:VBUS #PWR03
+U 1 1 600A8F6C
+P 6500 1200
+F 0 "#PWR03" H 6500 1050 50  0001 C CNN
+F 1 "VBUS" V 6515 1327 50  0000 L CNN
+F 2 "" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+	1    6500 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 600AB066
+P 6500 1550
+F 0 "R2" H 6559 1596 50  0000 L CNN
+F 1 "10k" H 6559 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6500 1550 50  0001 C CNN
+F 3 "~" H 6500 1550 50  0001 C CNN
+	1    6500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 600AD062
+P 6850 1450
+F 0 "D1" H 6850 1243 50  0000 C CNN
+F 1 "1N5819" H 6850 1334 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 6850 1450 50  0001 C CNN
+F 3 "~" V 6850 1450 50  0001 C CNN
+	1    6850 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 1200 6800 1200
+Wire Wire Line
+	6500 1200 6500 1450
+Connection ~ 6500 1200
+$Comp
+L power:GND #PWR08
+U 1 1 600B563C
+P 6500 1750
+F 0 "#PWR08" H 6500 1500 50  0001 C CNN
+F 1 "GND" H 6505 1577 50  0000 C CNN
+F 2 "" H 6500 1750 50  0001 C CNN
+F 3 "" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1650 6500 1750
+Wire Wire Line
+	6500 1450 6750 1450
+Connection ~ 6500 1450
+Wire Wire Line
+	6950 1450 7100 1450
+Wire Wire Line
+	7400 1450 7400 1550
+Connection ~ 7400 1550
+Wire Wire Line
+	7400 1550 7400 1650
+Wire Wire Line
+	7100 1400 7100 1450
+Connection ~ 7100 1450
+Text GLabel 1100 6300 3    50   Input ~ 0
+VDD_NRF
+$Comp
+L power:VBUS #PWR026
+U 1 1 600BE9A3
+P 1900 6300
+F 0 "#PWR026" H 1900 6150 50  0001 C CNN
+F 1 "VBUS" V 1900 6550 50  0000 C CNN
+F 2 "" H 1900 6300 50  0001 C CNN
+F 3 "" H 1900 6300 50  0001 C CNN
+	1    1900 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_SPST SW41
+U 1 1 600C3204
+P 3600 7900
+F 0 "SW41" H 3600 8135 50  0000 C CNN
+F 1 "SW_SPST" H 3600 8044 50  0000 C CNN
+F 2 "Keebio-Parts:SW_SPST_TL3342" H 3600 7900 50  0001 C CNN
+F 3 "~" H 3600 7900 50  0001 C CNN
+	1    3600 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 600C4850
+P 3800 7900
+F 0 "#PWR028" H 3800 7650 50  0001 C CNN
+F 1 "GND" V 3805 7772 50  0000 R CNN
+F 2 "" H 3800 7900 50  0001 C CNN
+F 3 "" H 3800 7900 50  0001 C CNN
+	1    3800 7900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3400 7900 0    50   Input ~ 0
+RESET
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F8EDC7E
+P 5200 4200
+F 0 "SW1" H 5200 4485 50  0000 C CNN
+F 1 "SW_Push" H 5200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5200 4400 50  0001 C CNN
+F 3 "~" H 5200 4400 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F8F2895
+P 6200 4200
+F 0 "SW2" H 6200 4485 50  0000 C CNN
+F 1 "SW_Push" H 6200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6200 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5F8F4125
+P 5200 4800
+F 0 "SW11" H 5200 5085 50  0000 C CNN
+F 1 "SW_Push" H 5200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5200 5000 50  0001 C CNN
+F 3 "~" H 5200 5000 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5F8F50A9
+P 6200 4800
+F 0 "SW12" H 6200 5085 50  0000 C CNN
+F 1 "SW_Push" H 6200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6200 5000 50  0001 C CNN
+F 3 "~" H 6200 5000 50  0001 C CNN
+	1    6200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F901B49
+P 6700 4200
+F 0 "SW3" H 6700 4485 50  0000 C CNN
+F 1 "SW_Push" H 6700 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 4400 50  0001 C CNN
+F 3 "~" H 6700 4400 50  0001 C CNN
+	1    6700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5F901B57
+P 7700 4200
+F 0 "SW4" H 7700 4485 50  0000 C CNN
+F 1 "SW_Push" H 7700 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7700 4400 50  0001 C CNN
+F 3 "~" H 7700 4400 50  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5F901B65
+P 6700 4800
+F 0 "SW13" H 6700 5085 50  0000 C CNN
+F 1 "SW_Push" H 6700 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 5000 50  0001 C CNN
+F 3 "~" H 6700 5000 50  0001 C CNN
+	1    6700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5F901B73
+P 7700 4800
+F 0 "SW14" H 7700 5085 50  0000 C CNN
+F 1 "SW_Push" H 7700 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7700 5000 50  0001 C CNN
+F 3 "~" H 7700 5000 50  0001 C CNN
+	1    7700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5F90B771
+P 5200 5400
+F 0 "SW21" H 5200 5685 50  0000 C CNN
+F 1 "SW_Push" H 5200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5200 5600 50  0001 C CNN
+F 3 "~" H 5200 5600 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5F90B77F
+P 6200 5400
+F 0 "SW22" H 6200 5685 50  0000 C CNN
+F 1 "SW_Push" H 6200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6200 5600 50  0001 C CNN
+F 3 "~" H 6200 5600 50  0001 C CNN
+	1    6200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5F90B78D
+P 6700 5400
+F 0 "SW23" H 6700 5685 50  0000 C CNN
+F 1 "SW_Push" H 6700 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 5600 50  0001 C CNN
+F 3 "~" H 6700 5600 50  0001 C CNN
+	1    6700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW24
+U 1 1 5F90B79B
+P 7700 5400
+F 0 "SW24" H 7700 5685 50  0000 C CNN
+F 1 "SW_Push" H 7700 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7700 5600 50  0001 C CNN
+F 3 "~" H 7700 5600 50  0001 C CNN
+	1    7700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5F910491
+P 8200 4200
+F 0 "SW5" H 8200 4485 50  0000 C CNN
+F 1 "SW_Push" H 8200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8200 4400 50  0001 C CNN
+F 3 "~" H 8200 4400 50  0001 C CNN
+	1    8200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5F91049F
+P 8200 4800
+F 0 "SW15" H 8200 5085 50  0000 C CNN
+F 1 "SW_Push" H 8200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8200 5000 50  0001 C CNN
+F 3 "~" H 8200 5000 50  0001 C CNN
+	1    8200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW25
+U 1 1 5F9104AD
+P 8200 5400
+F 0 "SW25" H 8200 5685 50  0000 C CNN
+F 1 "SW_Push" H 8200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8200 5600 50  0001 C CNN
+F 3 "~" H 8200 5600 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5F97DABB
+P 9700 4200
+F 0 "SW7" H 9700 4485 50  0000 C CNN
+F 1 "SW_Push" H 9700 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9700 4400 50  0001 C CNN
+F 3 "~" H 9700 4400 50  0001 C CNN
+	1    9700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5F97DAC9
+P 9200 4800
+F 0 "SW16" H 9200 5085 50  0000 C CNN
+F 1 "SW_Push" H 9200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9200 5000 50  0001 C CNN
+F 3 "~" H 9200 5000 50  0001 C CNN
+	1    9200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5F97DAD7
+P 9700 4800
+F 0 "SW17" H 9700 5085 50  0000 C CNN
+F 1 "SW_Push" H 9700 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9700 5000 50  0001 C CNN
+F 3 "~" H 9700 5000 50  0001 C CNN
+	1    9700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5F97DAF3
+P 11200 4200
+F 0 "SW9" H 11200 4485 50  0000 C CNN
+F 1 "SW_Push" H 11200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 11200 4400 50  0001 C CNN
+F 3 "~" H 11200 4400 50  0001 C CNN
+	1    11200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5F97DB01
+P 10700 4800
+F 0 "SW18" H 10700 5085 50  0000 C CNN
+F 1 "SW_Push" H 10700 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 10700 5000 50  0001 C CNN
+F 3 "~" H 10700 5000 50  0001 C CNN
+	1    10700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5F97DB0F
+P 11200 4800
+F 0 "SW19" H 11200 5085 50  0000 C CNN
+F 1 "SW_Push" H 11200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 11200 5000 50  0001 C CNN
+F 3 "~" H 11200 5000 50  0001 C CNN
+	1    11200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW26
+U 1 1 5F97DB1D
+P 9200 5400
+F 0 "SW26" H 9200 5685 50  0000 C CNN
+F 1 "SW_Push" H 9200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9200 5600 50  0001 C CNN
+F 3 "~" H 9200 5600 50  0001 C CNN
+	1    9200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 5F97DB2B
+P 9700 5400
+F 0 "SW27" H 9700 5685 50  0000 C CNN
+F 1 "SW_Push" H 9700 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9700 5600 50  0001 C CNN
+F 3 "~" H 9700 5600 50  0001 C CNN
+	1    9700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 5F97DB39
+P 10700 5400
+F 0 "SW28" H 10700 5685 50  0000 C CNN
+F 1 "SW_Push" H 10700 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 10700 5600 50  0001 C CNN
+F 3 "~" H 10700 5600 50  0001 C CNN
+	1    10700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 5F97DB47
+P 11200 5400
+F 0 "SW29" H 11200 5685 50  0000 C CNN
+F 1 "SW_Push" H 11200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 11200 5600 50  0001 C CNN
+F 3 "~" H 11200 5600 50  0001 C CNN
+	1    11200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5F97DB63
+P 12200 4800
+F 0 "SW20" H 12200 5085 50  0000 C CNN
+F 1 "SW_Push" H 12200 4994 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 12200 5000 50  0001 C CNN
+F 3 "~" H 12200 5000 50  0001 C CNN
+	1    12200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW30
+U 1 1 5F97DB71
+P 12200 5400
+F 0 "SW30" H 12200 5685 50  0000 C CNN
+F 1 "SW_Push" H 12200 5594 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 12200 5600 50  0001 C CNN
+F 3 "~" H 12200 5600 50  0001 C CNN
+	1    12200 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW33
+U 1 1 5F986F42
+P 8200 6000
+F 0 "SW33" H 8200 6285 50  0000 C CNN
+F 1 "SW_Push" H 8200 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-2.25U-ReversedStabilizers-NoLED" H 8200 6200 50  0001 C CNN
+F 3 "~" H 8200 6200 50  0001 C CNN
+	1    8200 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 3650 1    50   Input ~ 0
+COL0
+Text GLabel 6400 3650 1    50   Input ~ 0
+COL1
+Text GLabel 6500 3650 1    50   Input ~ 0
+COL2
+Text GLabel 7900 3650 1    50   Input ~ 0
+COL3
+Text GLabel 8000 3650 1    50   Input ~ 0
+COL4
+Text GLabel 9400 3650 1    50   Input ~ 0
+COL5
+Text GLabel 9500 3650 1    50   Input ~ 0
+COL6
+Text GLabel 10900 3650 1    50   Input ~ 0
+COL7
+Text GLabel 11000 3650 1    50   Input ~ 0
+COL8
+Text GLabel 12400 3650 1    50   Input ~ 0
+COL9
+Text GLabel 4800 4400 0    50   Input ~ 0
+ROW0
+Text GLabel 4800 5000 0    50   Input ~ 0
+ROW1
+Text GLabel 4800 5600 0    50   Input ~ 0
+ROW2
+Text GLabel 4800 6200 0    50   Input ~ 0
+ROW3
+Wire Wire Line
+	5000 3650 5000 4200
+Wire Wire Line
+	6400 3650 6400 4200
+Text GLabel 900  4800 0    50   Input ~ 0
+COL8
+Text GLabel 900  4700 0    50   Input ~ 0
+COL9
+Text GLabel 2950 1600 2    50   Input ~ 0
+RAW
+$Comp
+L Switch:SW_Push SW32
+U 1 1 5F986F34
+P 7700 6000
+F 0 "SW32" H 7700 6285 50  0000 C CNN
+F 1 "SW_Push" H 7700 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 7700 6200 50  0001 C CNN
+F 3 "~" H 7700 6200 50  0001 C CNN
+	1    7700 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 3500 0    50   Input ~ 0
+LED_1
+$Comp
+L Device:LED_Small D4
+U 1 1 6076628E
+P 4050 3500
+F 0 "D4" H 4050 3293 50  0000 C CNN
+F 1 "LED_Small" H 4050 3384 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" V 4050 3500 50  0001 C CNN
+F 3 "~" V 4050 3500 50  0001 C CNN
+	1    4050 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 6077A8B8
+P 4250 3500
+F 0 "R9" V 4050 3500 50  0000 C CNN
+F 1 "1k" V 4150 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 6077C7F4
+P 4350 3500
+F 0 "#PWR020" H 4350 3250 50  0001 C CNN
+F 1 "GND" V 4355 3372 50  0000 R CNN
+F 2 "" H 4350 3500 50  0001 C CNN
+F 3 "" H 4350 3500 50  0001 C CNN
+	1    4350 3500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 900  5000 0    50   Input ~ 0
+LED_1
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6079E056
+P 3450 7000
+F 0 "BT1" V 3195 7050 50  0000 C CNN
+F 1 "Battery_Cell" V 3286 7050 50  0000 C CNN
+F 2 "custom-parts:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" V 3450 7060 50  0001 C CNN
+F 3 "~" V 3450 7060 50  0001 C CNN
+	1    3450 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW37
+U 1 1 607A14FA
+P 4100 6900
+F 0 "SW37" H 4100 6575 50  0000 C CNN
+F 1 "SW_SPDT" H 4100 6666 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4100 6900 50  0001 C CNN
+F 3 "~" H 4100 6900 50  0001 C CNN
+	1    4100 6900
+	-1   0    0    1   
+$EndComp
+Text GLabel 4300 6900 2    50   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR027
+U 1 1 607D6CAC
+P 3350 7000
+F 0 "#PWR027" H 3350 6750 50  0001 C CNN
+F 1 "GND" V 3355 6872 50  0000 R CNN
+F 2 "" H 3350 7000 50  0001 C CNN
+F 3 "" H 3350 7000 50  0001 C CNN
+	1    3350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 607D949C
+P 3450 7400
+F 0 "BT2" V 3195 7450 50  0000 C CNN
+F 1 "Battery_Cell" V 3286 7450 50  0000 C CNN
+F 2 "custom-parts:custombatteryconnector" V 3450 7460 50  0001 C CNN
+F 3 "~" V 3450 7460 50  0001 C CNN
+	1    3450 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 7400 3350 7000
+Connection ~ 3350 7000
+Wire Wire Line
+	3650 7400 3650 7000
+$Comp
+L power:VBUS #PWR023
+U 1 1 600C129C
+P 3500 5150
+F 0 "#PWR023" H 3500 5000 50  0001 C CNN
+F 1 "VBUS" V 3515 5277 50  0000 L CNN
+F 2 "" H 3500 5150 50  0001 C CNN
+F 3 "" H 3500 5150 50  0001 C CNN
+	1    3500 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 600C04E9
+P 3700 5250
+F 0 "J1" H 3728 5226 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 3728 5135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 5250 50  0001 C CNN
+F 3 "~" H 3700 5250 50  0001 C CNN
+	1    3700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5FFFEDEA
+P 3500 5250
+F 0 "#PWR024" H 3500 5000 50  0001 C CNN
+F 1 "GND" V 3505 5122 50  0000 R CNN
+F 2 "" H 3500 5250 50  0001 C CNN
+F 3 "" H 3500 5250 50  0001 C CNN
+	1    3500 5250
+	0    1    1    0   
+$EndComp
+Text GLabel 2300 5100 2    50   Input ~ 0
+SWD
+Text GLabel 2300 5200 2    50   Input ~ 0
+SWC
+Text GLabel 3500 5350 0    50   Input ~ 0
+SWC
+Text GLabel 3500 5450 0    50   Input ~ 0
+SWD
+$Comp
+L power:GND #PWR07
+U 1 1 6001FF9F
+P 1950 1600
+F 0 "#PWR07" H 1950 1350 50  0001 C CNN
+F 1 "GND" V 1955 1472 50  0000 R CNN
+F 2 "" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1450 1650 1450
+Wire Wire Line
+	1650 1450 1650 1650
+Wire Wire Line
+	1650 1650 1550 1650
+Wire Wire Line
+	1550 1550 1600 1550
+Wire Wire Line
+	1600 1550 1600 1750
+Wire Wire Line
+	1600 1750 1550 1750
+$Comp
+L Power_Protection:PRTR5V0U2X D2
+U 1 1 60201668
+P 2450 1600
+F 0 "D2" V 2200 1300 50  0000 L CNN
+F 1 "SR05" V 2250 1300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 2510 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 2510 1600 50  0001 C CNN
+	1    2450 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1450 2100 1450
+Wire Wire Line
+	2100 1450 2100 1100
+Wire Wire Line
+	2100 1100 2450 1100
+Connection ~ 1650 1450
+Wire Wire Line
+	2450 1100 2550 1100
+Connection ~ 2450 1100
+Wire Wire Line
+	1600 1750 2100 1750
+Wire Wire Line
+	2100 1750 2100 2100
+Wire Wire Line
+	2100 2100 2450 2100
+Connection ~ 1600 1750
+Wire Wire Line
+	2450 2100 2550 2100
+Connection ~ 2450 2100
+Text GLabel 2550 2100 2    50   Input ~ 0
+D+
+Text GLabel 2550 1100 2    50   Input ~ 0
+D-
+Text GLabel 2300 5400 2    50   Input ~ 0
+ROW3
+Text GLabel 2300 4700 2    50   Input ~ 0
+ROW0
+Text GLabel 2300 5300 2    50   Input ~ 0
+ROW1
+Text GLabel 2300 5500 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	7100 1450 7250 1450
+$Comp
+L Device:C_Small C3
+U 1 1 60317035
+P 7050 1750
+F 0 "C3" H 7142 1796 50  0000 L CNN
+F 1 "1uF" H 7142 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7050 1750 50  0001 C CNN
+F 3 "~" H 7050 1750 50  0001 C CNN
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1650 7250 1650
+Wire Wire Line
+	7250 1650 7250 1450
+Connection ~ 7250 1450
+Wire Wire Line
+	7250 1450 7400 1450
+Wire Wire Line
+	7050 1850 7050 1950
+$Comp
+L power:GND #PWR012
+U 1 1 6032FF88
+P 7050 1950
+F 0 "#PWR012" H 7050 1700 50  0001 C CNN
+F 1 "GND" H 7055 1777 50  0000 C CNN
+F 2 "" H 7050 1950 50  0001 C CNN
+F 3 "" H 7050 1950 50  0001 C CNN
+	1    7050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60332105
+P 8100 1650
+F 0 "C2" H 8192 1696 50  0000 L CNN
+F 1 "1uF" H 8192 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8100 1650 50  0001 C CNN
+F 3 "~" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1750 8100 1850
+$Comp
+L power:GND #PWR010
+U 1 1 6033210C
+P 8100 1850
+F 0 "#PWR010" H 8100 1600 50  0001 C CNN
+F 1 "GND" H 8105 1677 50  0000 C CNN
+F 2 "" H 8100 1850 50  0001 C CNN
+F 3 "" H 8100 1850 50  0001 C CNN
+	1    8100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1550 8100 1550
+Connection ~ 8100 1550
+Wire Wire Line
+	8100 1550 8350 1550
+$Comp
+L Switch:SW_Push SW34
+U 1 1 605207F2
+P 9200 6000
+F 0 "SW34" H 9200 6285 50  0000 C CNN
+F 1 "SW_Push" H 9200 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-ReversedStabilizers-NoLED" H 9200 6200 50  0001 C CNN
+F 3 "~" H 9200 6200 50  0001 C CNN
+	1    9200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW36
+U 1 1 60520800
+P 10700 6000
+F 0 "SW36" H 10700 6285 50  0000 C CNN
+F 1 "SW_Push" H 10700 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 10700 6200 50  0001 C CNN
+F 3 "~" H 10700 6200 50  0001 C CNN
+	1    10700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW35
+U 1 1 6052081E
+P 9700 6000
+F 0 "SW35" H 9700 6285 50  0000 C CNN
+F 1 "SW_Push" H 9700 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 9700 6200 50  0001 C CNN
+F 3 "~" H 9700 6200 50  0001 C CNN
+	1    9700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW39
+U 1 1 60537C3D
+P 8150 7000
+F 0 "SW39" H 8150 7285 50  0000 C CNN
+F 1 "SW_Push" H 8150 7194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-6.25U-ReversedStabilizers-NoLED" H 8150 7200 50  0001 C CNN
+F 3 "~" H 8150 7200 50  0001 C CNN
+	1    8150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW38
+U 1 1 605434B3
+P 6850 7000
+F 0 "SW38" H 6850 7285 50  0000 C CNN
+F 1 "SW_Push" H 6850 7194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 6850 7200 50  0001 C CNN
+F 3 "~" H 6850 7200 50  0001 C CNN
+	1    6850 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 6000 1    50   Input ~ 0
+625COL
+Text GLabel 8350 7000 1    50   Input ~ 0
+625COL
+Text GLabel 8000 6000 1    50   Input ~ 0
+625ROW
+Text GLabel 7950 7000 1    50   Input ~ 0
+625ROW
+Text GLabel 6650 7000 1    50   Input ~ 0
+L125ROW
+Text GLabel 7050 7000 1    50   Input ~ 0
+L125COL
+Text GLabel 6900 6000 1    50   Input ~ 0
+L125COL
+Text GLabel 10500 6000 1    50   Input ~ 0
+R125ROW
+Text GLabel 10900 6000 1    50   Input ~ 0
+R125COL
+$Comp
+L Switch:SW_Push SW40
+U 1 1 6056E8C9
+P 10150 7000
+F 0 "SW40" H 10150 7285 50  0000 C CNN
+F 1 "SW_Push" H 10150 7194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 10150 7200 50  0001 C CNN
+F 3 "~" H 10150 7200 50  0001 C CNN
+	1    10150 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 7000 1    50   Input ~ 0
+R125ROW
+Text GLabel 10350 7000 1    50   Input ~ 0
+R125COL
+$Comp
+L Diode:BAV70 D5
+U 1 1 604E17BF
+P 5700 4200
+F 0 "D5" H 5700 4417 50  0000 C CNN
+F 1 "BAV70" H 5700 4326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5700 4200 50  0001 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3650 6500 4200
+Wire Wire Line
+	7900 3650 7900 4200
+$Comp
+L Diode:BAV70 D6
+U 1 1 604F8553
+P 7200 4200
+F 0 "D6" H 7200 4417 50  0000 C CNN
+F 1 "BAV70" H 7200 4326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7200 4200 50  0001 C CNN
+	1    7200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D8
+U 1 1 60505780
+P 10200 4200
+F 0 "D8" H 10200 4417 50  0000 C CNN
+F 1 "BAV70" H 10200 4326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10200 4200 50  0001 C CNN
+	1    10200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3650 8000 4200
+Wire Wire Line
+	9400 3650 9400 4200
+$Comp
+L Diode:BAV70 D7
+U 1 1 6050D66F
+P 8700 4200
+F 0 "D7" H 8700 4417 50  0000 C CNN
+F 1 "BAV70" H 8700 4326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8700 4200 50  0001 C CNN
+	1    8700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5F97DAAD
+P 9200 4200
+F 0 "SW6" H 9200 4485 50  0000 C CNN
+F 1 "SW_Push" H 9200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9200 4400 50  0001 C CNN
+F 3 "~" H 9200 4400 50  0001 C CNN
+	1    9200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5F97DAE5
+P 10700 4200
+F 0 "SW8" H 10700 4485 50  0000 C CNN
+F 1 "SW_Push" H 10700 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 10700 4400 50  0001 C CNN
+F 3 "~" H 10700 4400 50  0001 C CNN
+	1    10700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D9
+U 1 1 605332C7
+P 11700 4200
+F 0 "D9" H 11700 4417 50  0000 C CNN
+F 1 "BAV70" H 11700 4326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11700 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 11700 4200 50  0001 C CNN
+	1    11700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5F97DB55
+P 12200 4200
+F 0 "SW10" H 12200 4485 50  0000 C CNN
+F 1 "SW_Push" H 12200 4394 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 12200 4400 50  0001 C CNN
+F 3 "~" H 12200 4400 50  0001 C CNN
+	1    12200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4400 5700 4400
+Connection ~ 5700 4400
+Wire Wire Line
+	5700 4400 7200 4400
+Connection ~ 7200 4400
+Wire Wire Line
+	7200 4400 8700 4400
+Connection ~ 8700 4400
+Connection ~ 10200 4400
+$Comp
+L Diode:BAV70 D10
+U 1 1 6054B74A
+P 5700 4800
+F 0 "D10" H 5700 5017 50  0000 C CNN
+F 1 "BAV70" H 5700 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 4800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5700 4800 50  0001 C CNN
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D11
+U 1 1 6054B752
+P 7200 4800
+F 0 "D11" H 7200 5017 50  0000 C CNN
+F 1 "BAV70" H 7200 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 4800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7200 4800 50  0001 C CNN
+	1    7200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D13
+U 1 1 6054B75A
+P 10200 4800
+F 0 "D13" H 10200 5017 50  0000 C CNN
+F 1 "BAV70" H 10200 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 4800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10200 4800 50  0001 C CNN
+	1    10200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D12
+U 1 1 6054B762
+P 8700 4800
+F 0 "D12" H 8700 5017 50  0000 C CNN
+F 1 "BAV70" H 8700 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8700 4800 50  0001 C CNN
+	1    8700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D14
+U 1 1 6054B775
+P 11700 4800
+F 0 "D14" H 11700 5017 50  0000 C CNN
+F 1 "BAV70" H 11700 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11700 4800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 11700 4800 50  0001 C CNN
+	1    11700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5000 5700 5000
+Connection ~ 5700 5000
+Wire Wire Line
+	5700 5000 7200 5000
+Connection ~ 7200 5000
+Wire Wire Line
+	7200 5000 8700 5000
+Connection ~ 8700 5000
+Wire Wire Line
+	8700 5000 10200 5000
+Connection ~ 10200 5000
+Wire Wire Line
+	10200 5000 11700 5000
+Wire Wire Line
+	11000 3650 11000 4200
+Connection ~ 11000 4200
+Wire Wire Line
+	11000 4200 11000 4800
+Wire Wire Line
+	9400 4200 9400 4800
+Connection ~ 9400 4200
+Wire Wire Line
+	8000 4200 8000 4800
+Connection ~ 8000 4200
+Wire Wire Line
+	7900 4200 7900 4800
+Connection ~ 7900 4200
+Wire Wire Line
+	6400 4200 6400 4800
+Connection ~ 6400 4200
+Wire Wire Line
+	6500 4200 6500 4800
+Connection ~ 6500 4200
+Wire Wire Line
+	5000 4200 5000 4800
+Connection ~ 5000 4200
+Wire Wire Line
+	12400 3650 12400 4200
+Connection ~ 12400 4200
+Wire Wire Line
+	12400 4200 12400 4800
+$Comp
+L Diode:BAV70 D15
+U 1 1 605EF8DA
+P 5700 5400
+F 0 "D15" H 5700 5617 50  0000 C CNN
+F 1 "BAV70" H 5700 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 5400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D16
+U 1 1 605EF8E0
+P 7200 5400
+F 0 "D16" H 7200 5617 50  0000 C CNN
+F 1 "BAV70" H 7200 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 5400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7200 5400 50  0001 C CNN
+	1    7200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D18
+U 1 1 605EF8E6
+P 10200 5400
+F 0 "D18" H 10200 5617 50  0000 C CNN
+F 1 "BAV70" H 10200 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 5400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10200 5400 50  0001 C CNN
+	1    10200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D17
+U 1 1 605EF8EC
+P 8700 5400
+F 0 "D17" H 8700 5617 50  0000 C CNN
+F 1 "BAV70" H 8700 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 5400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8700 5400 50  0001 C CNN
+	1    8700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D19
+U 1 1 605EF8F2
+P 11700 5400
+F 0 "D19" H 11700 5617 50  0000 C CNN
+F 1 "BAV70" H 11700 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11700 5400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 11700 5400 50  0001 C CNN
+	1    11700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 4800 11000 5400
+Wire Wire Line
+	10900 4800 10900 5400
+Wire Wire Line
+	9500 4800 9500 5400
+Wire Wire Line
+	9400 4800 9400 5400
+Wire Wire Line
+	8000 4800 8000 5400
+Wire Wire Line
+	7900 4800 7900 5400
+Wire Wire Line
+	6400 4800 6400 5400
+Wire Wire Line
+	6500 4800 6500 5400
+Wire Wire Line
+	5000 4800 5000 5400
+Wire Wire Line
+	12400 4800 12400 5400
+$Comp
+L Diode:BAV70 D20
+U 1 1 6062BD56
+P 7200 6000
+F 0 "D20" H 7200 6217 50  0000 C CNN
+F 1 "BAV70" H 7200 6126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7200 6000 50  0001 C CNN
+	1    7200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D22
+U 1 1 6062BD5C
+P 10200 6000
+F 0 "D22" H 10200 6217 50  0000 C CNN
+F 1 "BAV70" H 10200 6126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10200 6000 50  0001 C CNN
+	1    10200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D21
+U 1 1 6062BD62
+P 8700 6000
+F 0 "D21" H 8700 6217 50  0000 C CNN
+F 1 "BAV70" H 8700 6126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8700 6000 50  0001 C CNN
+	1    8700 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 5400 10900 6000
+Wire Wire Line
+	9500 5400 9500 6000
+Wire Wire Line
+	9400 5400 9400 6000
+Wire Wire Line
+	8000 5400 8000 6000
+Wire Wire Line
+	7900 5400 7900 6000
+Wire Wire Line
+	6500 5400 6500 6000
+Wire Wire Line
+	4800 5600 5700 5600
+Connection ~ 5700 5600
+Wire Wire Line
+	5700 5600 7200 5600
+Connection ~ 7200 5600
+Wire Wire Line
+	7200 5600 8700 5600
+Connection ~ 8700 5600
+Wire Wire Line
+	8700 5600 10200 5600
+Connection ~ 10200 5600
+Wire Wire Line
+	10200 5600 11700 5600
+Wire Wire Line
+	10200 6200 8700 6200
+Connection ~ 7200 6200
+Connection ~ 8700 6200
+Wire Wire Line
+	8700 6200 7200 6200
+Wire Wire Line
+	7200 6200 4800 6200
+$Comp
+L Switch:SW_Push SW31
+U 1 1 5F986F26
+P 6700 6000
+F 0 "SW31" H 6700 6285 50  0000 C CNN
+F 1 "SW_Push" H 6700 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 6200 50  0001 C CNN
+F 3 "~" H 6700 6200 50  0001 C CNN
+	1    6700 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 6000 1    50   Input ~ 0
+L125ROW
+Connection ~ 3650 7000
+Wire Wire Line
+	3650 7000 3900 7000
+Wire Wire Line
+	9500 3650 9500 4200
+Connection ~ 9500 4200
+Wire Wire Line
+	9500 4200 9500 4800
+Wire Wire Line
+	8700 4400 10200 4400
+Wire Wire Line
+	10900 3650 10900 4200
+Connection ~ 10900 4200
+Wire Wire Line
+	10900 4200 10900 4800
+Wire Wire Line
+	10200 4400 11700 4400
+$Comp
+L power:GND #PWR022
+U 1 1 5FFFB04F
+P 2300 4600
+F 0 "#PWR022" H 2300 4350 50  0001 C CNN
+F 1 "GND" V 2305 4472 50  0000 R CNN
+F 2 "" H 2300 4600 50  0001 C CNN
+F 3 "" H 2300 4600 50  0001 C CNN
+	1    2300 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 900  5500 0    50   Input ~ 0
+COL3
+Text GLabel 900  5600 0    50   Input ~ 0
+COL2
+Text GLabel 900  5400 0    50   Input ~ 0
+COL4
+Text GLabel 900  5800 0    50   Input ~ 0
+COL1
+Text GLabel 900  5200 0    50   Input ~ 0
+COL6
+Text GLabel 900  5300 0    50   Input ~ 0
+COL5
+Text GLabel 1400 6300 3    50   Input ~ 0
+COL0
+Text GLabel 900  5100 0    50   Input ~ 0
+COL7
+$EndSCHEMATC
